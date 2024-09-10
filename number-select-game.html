@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="number-select-game.css">
+  <title>number-select-game</title>
+</head>
+<body>
+  <h1 class="main-theme">
+    数字あてゲーム
+  </h1>
+  <p class="game-explain">
+    コンピューターが自動で1から100までのうちランダムで整数を生成します。できるだけ少ない予想回数で数字を当ててみよう。
+  </p>
+  <h2 class="please-input-number">
+    予想した数字を入力してください。
+  </h2>
+
+  <input type="text" placeholder="数字を入力してください" class="one-to-hundred" onkeydown="
+    eventKeydown(event);
+  ">
+  <button onclick="
+    expectNumber();
+    displayExpect();
+  " class="expect-button">
+    予想する
+  </button>
+  <p class="expect-number">
+    予想回数:0回
+  </p>
+  <button onclick="
+    resetNumber();
+  " class="reset-button">
+    リセット
+  </button>
+  <script src="number-select-game.js"></script>
+</body>
+</html>
