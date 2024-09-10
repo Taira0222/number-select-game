@@ -1,0 +1,28 @@
+body{
+  text-align: center;
+}
+
+.game-explain{
+  margin: 0 0 30px 0;
+}
+
+.one-to-hundred{
+  padding: 5px 15px;
+}
+.expect-button{
+  background: rgb(39,172,217);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.expect-number{
+  margin: 20px 0 20px;
+}
+.reset-button{
+  background: rgb(236, 201, 0);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
